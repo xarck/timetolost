@@ -1,0 +1,26 @@
+{
+  "name": "timetolost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "mongoose": "^5.9.19",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": "10.14.2",
+    "npm": "6.4.1"
+  }
+}

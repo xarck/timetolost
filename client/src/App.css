@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #fbfbfb
+}
+h1{
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+#click{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
+#btn-theme{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+}
+.divider{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(8,minmax(75px,auto));
+    grid-gap: 10px;
+}
+ul #content p{
+    margin: 10px;
+}
+ul li{
+    overflow: hidden;
+    border-radius: 5px;
+}
+#urltext{
+    background: initial;
+}
+#content{
+    grid-column: 2/6;
+    grid-row: 3/5;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+#websites{
+    grid-column: 2/6;
+    grid-row: 1/3;
+}
+#songs{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#albums{
+    grid-column: 6/7;
+    grid-row: 1/3;
+}
+#games{
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+#webpages{
+    grid-column: 6/7;
+    grid-row: 3/5;
+}
+#apps{
+    grid-column: 1/2;
+    grid-row: 5/7;
+}
+#books{
+    grid-column: 6/7;
+    grid-row: 5/7;
+}
+#videos{
+    grid-column: 2/4;
+    grid-row: 5/7;
+}
+#jokes{
+    grid-column: 4/6;
+    grid-row: 5/7;
+}
+#facts{
+    grid-column: 1/2;
+    grid-row: 7/9;
+}
+#softwares{
+    grid-column: 5/6;
+    grid-row: 7/9;
+}
+#images{
+    grid-column: 2/3;
+    grid-row: 7/9;
+}
+#thoughts{
+    grid-row: 7/9;
+    grid-column: 6/7;
+}
+#movies{
+    grid-column: 3/5;
+    grid-row: 7/9;
+}
+nav ul a{
+    cursor: pointer;
+    text-decoration: none !important;
+    color:white;
+    border-radius: 2px;
+}
+footer a{
+    color: black;
+}
+img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+p{
+    color: black;
+    line-height: 30px;
+}
+.modal-body .btn{
+    margin: 10px;
+}
+footer{
+    width: 100%;
+    height:100%;
+    background: #e3e3e3;
+}
+#support{
+    width: 150px;
+}
+button{
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    margin: 5px;
+}
+.alert-success{
+    display: none
+}
+.sponsers{
+    display: none;
+}
+@media(max-width: 700px){
+    body{
+        font-size: 15px;
+    }
+    h1{
+        margin: 10px;
+        font-size: 25px;
+    }
+    #click{
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        font-size: 18px;
+    }
+    #btn-theme{
+        display: none;
+    }
+    img{
+        height: 25px;
+        width: 25px;
+    }
+    p{
+        line-height: 20px;
+    }
+    footer{
+        height: 100%;
+        padding: 10px 0;
+    }
+    .divider{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(9,auto);
+        grid-gap: 1px;
+    }
+    ul li{
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        margin: 2px;
+        padding: 5px;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+    #albums{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #apps{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #books{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #facts{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #games{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #images{
+        grid-column: 2/3;
+        grid-row: 3/4
+    }
+    #jokes{
+        grid-column: 1/2;
+        grid-row: 6/7
+    }
+    #movies{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    #content{
+        grid-column: 1/3;
+        grid-row: 4/6;
+    }
+    #softwares{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    #songs{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    #thoughts{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    #websites{
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+    #webpages{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+    #videos{
+        grid-column: 2/3;
+        grid-row: 9/10;
+    }
+    .divider button{
+        height: 35px;
+        width: 80px !important;
+        font-size: 14px !important;
+    }
+}
